@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quick draw game 2nd page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-image : url('background.jpeg'); background-repeat : no-repeat; background-size:cover;">
+    <style>
+        .btn{
+            display: block;
+            width: 75%;
+            margin: 20px 20px 20px 30px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: white;
+            padding-top: 5px;
+            
+        }
+        .btn1{
+            display: block;
+            width: 75%;
+            margin: 20px 20px 20px 30px;
+            height: 35px;
+            border-radius: 5px;
+            padding-top: 15px;
+            color: white;
+            background-color: purple;
+            text-align: center;
+        
+        }
+        #back{
+            display: block;
+            margin-left: 50px;
+            color: white;
+            width: 50px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .btn:hover{
+            background-color:yellowgreen;
+            color: white;
+            font-weight: 500;
+        }
+        #back:hover{
+            background-color:purple;
+            color: white;
+            width: 50px;
+        }
+        
+        
+    </style>
+    <section class="services-container" style="height:700px ;"  >
+        <!-- heading section -->
+        <h1 class="h-primary center" style="text-align: center;color: white;">
+            Quick Draw Game 
+        </h1>
+
+        <!-- back button -->
+        <a href="Quick-draw-game 1st page.html" id="back"style="font-size: 20px;border-radius: 5px;">back</a>
+
+        <!-- main section this section cantains left mid right container -->
+
+        <div id="services" style=" display: flex;flex-direction:row;height: 600px;" >
+            
+            <!-- left container -->
+            <div class="box" style=" width: 25%; margin: 20px 20px 20px 20px;">
+            
+                <h2 class="h-secondary center btn1">Steps to play</h2>
+
+                <div style="margin: 20px;color: white; width: 85%;">
+
+                    <div class="btn"style="background-color:transparent;">-> Choose One of the labels provided on right.</div>
+                    <div class="btn"style="background-color:transparent;">-> Draw inside the given canvas area.</div>
+                    <div class="btn"style="background-color:transparent;">-> Press confirm selection </div>
+                    <div class="btn"style="background-color:transparent;">-> If you make mistake while drawing press 'Clear selection'</div>
+
+                </div>
+
+            </div>
+
+            <!-- mid container -->
+
+            <div class="box" style="background-color: rgb(224, 177, 145);width: 40%;margin: 20px 20px 20px 20px;">
+
+                <div style="margin: 20px 20px 20px 20px;height: 500px;background-color: white;text-align: center;">
+
+                    <h2 class="h-secondary center">Draw inside this canvas</h2>
+                    <canvas id="mycanvas"width="520"height="450"></canvas>
+                </div>
+
+            </div>
+
+            <!-- right container -->
+
+            <div class="box" style="width: 25%;margin: 20px 20px 20px 20px;text-align: center;">
+                
+                <div class="btn1">Choose from list </div>
+                <a class="btn">Sun</a>
+                <a class="btn">Flower</a>
+                <a class="btn">Pencil</a>
+                <a class="btn">Umbrella</a>
+                <a class="btn">House</a>
+                <a class="btn">Spoon</a>
+                <a class="btn">Bird</a>
+                <a class="btn">Hand</a>
+                <a class="btn">Mug</a>
+                <a class="btn">Tree</a>
+
+
+                <div style="margin: 15px;">
+                    <a class="btn"style="background-color: yellowgreen;">Confirm Selection</a>
+                    <a class="btn" style="background-color:rgb(247, 45, 45);" onclick="clr()">Clear canvas</a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <script src="canvas.js">
+        function clr(){
+        document.getElementById("mycanvas").ctx.clearRect(0, 0, this.width, this.height);
+    }
+    </script>
+</body>
+</html>
