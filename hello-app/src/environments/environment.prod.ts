@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  SERVER_URL :"https://quickdraw.autonise.com/api/test"
+  SERVER_URL :"http://3.138.62.58"
 };

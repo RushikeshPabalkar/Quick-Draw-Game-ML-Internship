@@ -1,5 +1,6 @@
-import { Component,ViewChild,ElementRef,AfterViewInit } from '@angular/core';
+import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import {environment} from 'src/environments/environment';
 @Component({
   selector: 'app-playgame',
   templateUrl: './playgame.component.html',
@@ -10,14 +11,18 @@ export class PlaygameComponent implements AfterViewInit {
   // ngOnInit():void{}
   constructor(private http: HttpClient){}
   @ViewChild('canvasres') public canvasel?:ElementRef ;
-  private ctx?: CanvasRenderingContext2D;
+  private ctx?: any;
+  result = ''
+  classes = ['Sun','Flower','Umbrella','Pencil','Spoon','Tree','Mug','House','Bird','Hand'];
+  
   ngAfterViewInit():void{
     const canvas =this.canvasel?.nativeElement;
     // const canvas=document.getElementById('mycanvas');
     const ctx = canvas.getContext("2d");
-    ctx.fillStyle="transparent";
-    ctx.fillRect(0,0,
-        canvas.width,canvas.height);
+    // ctx.fillStyle="transparent";
+    // ctx.fillRect(0,0,
+    //     canvas.width,canvas.height);
+    this.ctx=ctx;
 
 
     let painting = false;
@@ -47,14 +52,19 @@ export class PlaygameComponent implements AfterViewInit {
     canvas.addEventListener("mousemove",draw);
 
   }
-  
+  clr(){
+    this.ctx.clearRect(0,0,384,384);
+  }
+
   Save(){
     
   var canvas:HTMLCanvasElement=this.canvasel?.nativeElement;
   var image = canvas.toDataURL('image/png');
 
-  this.http.post('https://quickdraw.autonise.com/api/test',{image:image},{responseType:"text"}).subscribe((res:any)=>{
+  this.http.post(environment.SERVER_URL+'/Quickdraw/test',{image:image},{responseType:"text"}).subscribe((res:any)=>{
     console.log(res);
+
+    this.result = 'You have drawn ' + res;
   });
   
 }

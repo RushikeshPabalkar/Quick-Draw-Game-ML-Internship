@@ -7,12 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hello-app';
+  title = 'Quick Draw Game';
   response = null;
 
-  constructor(private http: HttpClient){
-    this.http.get('http://3.135.174.112/api/hello').subscribe((res:any)=> {
-      this.response = res;
-    })
-  }
 }
