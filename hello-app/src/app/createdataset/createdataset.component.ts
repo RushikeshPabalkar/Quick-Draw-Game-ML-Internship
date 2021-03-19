@@ -63,7 +63,7 @@ export class CreatedatasetComponent implements AfterViewInit {
     console.log(classname);
   }
   
-  clearcanvas(){
+  clr(){
     this.ctx.clearRect(0,0,384,384);  
     
   }
@@ -85,7 +85,7 @@ export class CreatedatasetComponent implements AfterViewInit {
       {filename, image, classname: this.classname},
       {responseType:'text'}).subscribe((res:any)=>{
         console.log(res, this.classname)
-        this.clearcanvas();
+        this.clr();
       })  
   }
   
