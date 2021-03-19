@@ -39,7 +39,7 @@ export class PlaygameComponent implements AfterViewInit {
         let x=e.clientX- rect.left;
         let y=e.clientY- rect.top;
         if (!painting) return;
-        ctx.lineWidth = 10;
+        ctx.lineWidth = 5;
         ctx.lineCap="round";
         ctx.lineTo(x, y);
         ctx.stroke();
