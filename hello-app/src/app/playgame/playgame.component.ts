@@ -14,7 +14,7 @@ export class PlaygameComponent implements AfterViewInit {
   private ctx?: any;
   result = ''
   classes = ['Sun','Flower','Umbrella','Pencil','Spoon','Tree','Mug','House','Bird','Hand'];
-  
+
   ngAfterViewInit():void{
     const canvas =this.canvasel?.nativeElement;
     // const canvas=document.getElementById('mycanvas');
@@ -67,6 +67,6 @@ export class PlaygameComponent implements AfterViewInit {
     this.result = 'You have drawn ' + res;
   });
   
+  }
 }
 
-}
