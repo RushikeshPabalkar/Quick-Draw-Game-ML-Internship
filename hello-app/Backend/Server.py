@@ -39,6 +39,5 @@ def result():
     f.write(base64.decodebytes(image))
 
   output = onnx_save.test(f'resultdata/{filename}')
-  #print(output)
 
   return output
