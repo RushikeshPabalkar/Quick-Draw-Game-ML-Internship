@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84742f47-fcaf-4cef-9e48-00a2879cfe27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Quick Draw Game ML Internship.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Machine Learning/onnx_save.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Machine Learning/Config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Machine Learning/Config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Machine Learning/Dataloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Machine Learning/Dataloader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Machine Learning/Training_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/Machine Learning/Training_dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Machine Learning/onnx.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello-app/Backend/Server.py" beforeDir="false" afterPath="$PROJECT_DIR$/hello-app/Backend/Server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello-app/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/hello-app/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello-app/src/app/playgame/playgame.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/hello-app/src/app/playgame/playgame.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello-app/src/app/playgame/playgame.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/hello-app/src/app/playgame/playgame.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello-app/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/hello-app/src/environments/environment.prod.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +49,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
